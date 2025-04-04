@@ -1,0 +1,20 @@
+from django.contrib import admin
+from .models import Usuario, Paciente, HistoriaClinica, ProfesionalSalud, Doctor, Enfermero, Tecnico, PruebaDiagnostica, MRI, EEG, MicroRNA, EventoMedico, Cirugia, Prescripcion, Consulta, JuntaMedica, InformeDiagnostico
+# Register your models here.
+admin.site.register(Usuario)
+admin.site.register(Paciente)
+admin.site.register(HistoriaClinica)
+admin.site.register(ProfesionalSalud)
+admin.site.register(Doctor)
+admin.site.register(Enfermero)
+admin.site.register(Tecnico)
+admin.site.register(PruebaDiagnostica)
+admin.site.register(MRI)
+admin.site.register(EEG)
+admin.site.register(MicroRNA)
+admin.site.register(EventoMedico)
+admin.site.register(Cirugia)
+admin.site.register(Prescripcion)
+admin.site.register(Consulta)
+admin.site.register(JuntaMedica)
+admin.site.register(InformeDiagnostico)

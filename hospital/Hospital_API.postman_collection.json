@@ -1,0 +1,84 @@
+{
+    "info": {
+        "name": "Hospital API",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "_postman_id": "hospital-api-001"
+    },
+    "item": [
+        {
+            "name": "Obtener todos los datos (pacientes, consultas, etc.)",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:8000/gestion_medica/gestion/",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000",
+                    "path": [
+                        "gestion_medica",
+                        "gestion"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Crear paciente",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"tipo\": \"paciente\",\n    \"nombre\": \"Juan P\\u00e9rez\",\n    \"edad\": 35,\n    \"genero\": \"Masculino\",\n    \"diagnostico\": \"Gripe com\\u00fan\"\n}"
+                },
+                "url": {
+                    "raw": "http://localhost:8000/gestion_medica/gestion/",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000",
+                    "path": [
+                        "gestion_medica",
+                        "gestion"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Actualizar paciente",
+            "request": {
+                "method": "PUT",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"tipo\": \"paciente\",\n    \"id\": 1,\n    \"nombre\": \"Juan P\\u00e9rez Actualizado\",\n    \"edad\": 36,\n    \"genero\": \"Masculino\",\n    \"diagnostico\": \"Mejorando\"\n}"
+                },
+                "url": {
+                    "raw": "http://localhost:8000/gestion_medica/gestion/",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000",
+                    "path": [
+                        "gestion_medica",
+                        "gestion"
+                    ]
+                }
+            }
+        }
+    ]
+}
